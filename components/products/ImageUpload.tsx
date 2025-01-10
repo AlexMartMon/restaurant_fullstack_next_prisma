@@ -12,9 +12,8 @@ export default function ImageUpload({image} : {image: string | undefined}) {
     <CldUploadWidget 
     onSuccess={(result, {widget}) => {
         if (result.event === 'success') {
-            console.log(result)
             widget.close()
-            //@ts-ignore
+            //@ts-expect-error: secure_url is a property of result.info
             setImageUrl(result.info?.secure_url)
         }
     }}

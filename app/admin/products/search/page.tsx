@@ -33,7 +33,7 @@ export default async function SearchPage({
       {products.length ? (
         <ProductTable products={products} />
       ) : (
-        <p className="text-center text-lg">There's not results</p>
+        <p className="text-center text-lg">There is not results</p>
       )}
     </>
   );

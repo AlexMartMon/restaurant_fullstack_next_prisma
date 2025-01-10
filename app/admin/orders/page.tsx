@@ -35,7 +35,7 @@ export default async function OrdersPage() {
             />
           ))}
         </div>
-      ) : <p className="text-center">There's not orders pending.</p> }
+      ) : <p className="text-center">There is not orders pending.</p> }
     </>
   )
 }
